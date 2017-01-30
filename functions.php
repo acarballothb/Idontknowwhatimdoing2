@@ -44,5 +44,13 @@ function connectToDBBBlink()
 	return $con_result;
 }
 
+function escapeInjecton( $text )
+{
+	$link = connectToDBBBlink();
+	$editedText = mysqli_real_escape_string($link, $text);
+	
+	return $editedText;
+
+}
 				
 ?>

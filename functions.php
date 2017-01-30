@@ -12,7 +12,7 @@ function im_logged()
     //ALL OK- CAN ENTER
     return true;
 }
-
+//UUUUu
 function logout()
 {
 	@session_start();

@@ -12,7 +12,7 @@ function im_logged()
     //ALL OK- CAN ENTER
     return true;
 }
-
+//UUUUu
 function logout()
 {
 	@session_start();
@@ -44,5 +44,13 @@ function connectToDBBBlink()
 	return $con_result;
 }
 
+function escapeInjecton( $text )
+{
+	$link = connectToDBBBlink();
+	$editedText = mysqli_real_escape_string($link, $text);
+	
+	return $editedText;
+
+}
 				
 ?>
